@@ -1,0 +1,4424 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\USER
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 30
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 2008
+    content: "\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e]0;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 8
+    content: "\e[?25l\e[6;1H\e[?25h"
+  - delay: 331
+    content: 'PS C:\Users\USER> '
+  - delay: 12351
+    content: "\e[?25l"
+  - delay: 12
+    content: "& \e[36m\"C:\\Program Files\\MariaDB 12.0\\bin\\mysql.exe\" \e[90m-u \e[mroot \e[90m-p\e[?25h"
+  - delay: 557
+    content: "\e[m"
+  - delay: 21
+    content: "\r\n"
+  - delay: 86
+    content: E
+  - delay: 21
+    content: 'nter password: '
+  - delay: 1277
+    content: '*'
+  - delay: 250
+    content: '*'
+  - delay: 231
+    content: '*'
+  - delay: 166
+    content: '*'
+  - delay: 166
+    content: '*'
+  - delay: 65
+    content: '*'
+  - delay: 198
+    content: '*'
+  - delay: 99
+    content: '*'
+  - delay: 164
+    content: '*'
+  - delay: 151
+    content: '*'
+  - delay: 203
+    content: '*'
+  - delay: 311
+    content: '*'
+  - delay: 181
+    content: '*'
+  - delay: 162
+    content: '*'
+  - delay: 202
+    content: '*'
+  - delay: 106
+    content: '*'
+  - delay: 463
+    content: '*'
+  - delay: 385
+    content: "\r\n"
+  - delay: 183
+    content: Welcome to the MariaDB monitor.  Commands end with ; or \g.
+  - delay: 22
+    content: "\r\n"
+  - delay: 64
+    content: "Your MariaDB connection id is 3\r\nServer version: 12.0.2-MariaDB mariadb.org binary distribution\r\n"
+  - delay: 15
+    content: "\e[?25l\r\nCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[14;1HType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\e[16;1HMariaDB [(none)]> \e[?25h"
+  - delay: 257274
+    content: c
+  - delay: 387
+    content: e
+  - delay: 1354
+    content: "\b \b"
+  - delay: 263
+    content: r
+  - delay: 146
+    content: e
+  - delay: 163
+    content: a
+  - delay: 152
+    content: t
+  - delay: 161
+    content: e
+  - delay: 497
+    content: ' '
+  - delay: 105
+    content: d
+  - delay: 211
+    content: a
+  - delay: 112
+    content: t
+  - delay: 113
+    content: a
+  - delay: 187
+    content: b
+  - delay: 254
+    content: s
+  - delay: 210
+    content: e
+  - delay: 2029
+    content: "\b \b"
+  - delay: 128
+    content: "\b \b"
+  - delay: 975
+    content: a
+  - delay: 216
+    content: s
+  - delay: 1623
+    content: e
+  - delay: 61950
+    content: "\b \b"
+  - delay: 501
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 37
+    content: "\b \b"
+  - delay: 29
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 117
+    content: "\b \b"
+  - delay: 140
+    content: "\b \b"
+  - delay: 120
+    content: "\b \b"
+  - delay: 105
+    content: "\b \b"
+  - delay: 110
+    content: "\b \b"
+  - delay: 139
+    content: "\b \b"
+  - delay: 122
+    content: "\b \b"
+  - delay: 124
+    content: "\b \b"
+  - delay: 286
+    content: "\b \b"
+  - delay: 2706
+    content: d
+  - delay: 225
+    content: r
+  - delay: 192
+    content: o
+  - delay: 170
+    content: p
+  - delay: 610
+    content: ' '
+  - delay: 517
+    content: d
+  - delay: 128
+    content: a
+  - delay: 116
+    content: t
+  - delay: 126
+    content: a
+  - delay: 211
+    content: b
+  - delay: 203
+    content: a
+  - delay: 236
+    content: s
+  - delay: 242
+    content: e
+  - delay: 1376
+    content: "\b \b"
+  - delay: 147
+    content: "\b \b"
+  - delay: 499
+    content: "\b \b"
+  - delay: 38
+    content: "\b \b"
+  - delay: 27
+    content: "\b \b"
+  - delay: 35
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 30
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 120
+    content: "\b \b"
+  - delay: 168
+    content: "\b \b"
+  - delay: 1322
+    content: "\b \b"
+  - delay: 63369
+    content: d
+  - delay: 217
+    content: r
+  - delay: 657
+    content: "\b \b"
+  - delay: 170
+    content: "\b \b"
+  - delay: 684
+    content: c
+  - delay: 252
+    content: r
+  - delay: 154
+    content: e
+  - delay: 214
+    content: a
+  - delay: 157
+    content: t
+  - delay: 186
+    content: e
+  - delay: 100
+    content: ' '
+  - delay: 199
+    content: d
+  - delay: 204
+    content: a
+  - delay: 177
+    content: t
+  - delay: 97
+    content: a
+  - delay: 173
+    content: b
+  - delay: 143
+    content: s
+  - delay: 247
+    content: e
+  - delay: 1847
+    content: "\b \b"
+  - delay: 141
+    content: "\b \b"
+  - delay: 460
+    content: a
+  - delay: 270
+    content: s
+  - delay: 486
+    content: e
+  - delay: 1007
+    content: ;
+  - delay: 234
+    content: ' '
+  - delay: 2131
+    content: "\b \b"
+  - delay: 118
+    content: "\b \b"
+  - delay: 694
+    content: ' '
+  - delay: 491
+    content: p
+  - delay: 77
+    content: e
+  - delay: 176
+    content: r
+  - delay: 52
+    content: p
+  - delay: 278
+    content: u
+  - delay: 157
+    content: s
+  - delay: 1566
+    content: ;
+  - delay: 326
+    content: ' '
+  - delay: 258264
+    content: u
+  - delay: 121
+    content: s
+  - delay: 214
+    content: e
+  - delay: 128
+    content: ' '
+  - delay: 627
+    content: p
+  - delay: 105
+    content: e
+  - delay: 153
+    content: r
+  - delay: 26
+    content: p
+  - delay: 257
+    content: u
+  - delay: 114
+    content: s
+  - delay: 650
+    content: ;
+  - delay: 266
+    content: ' '
+  - delay: 5202
+    content: c
+  - delay: 294
+    content: r
+  - delay: 117
+    content: e
+  - delay: 225
+    content: a
+  - delay: 75
+    content: t
+  - delay: 212
+    content: e
+  - delay: 172
+    content: ' '
+  - delay: 327
+    content: t
+  - delay: 79
+    content: a
+  - delay: 167
+    content: b
+  - delay: 305
+    content: l
+  - delay: 190
+    content: e
+  - delay: 148
+    content: ' '
+  - delay: 2938
+    content: 'y'
+  - delay: 146
+    content: e
+  - delay: 213
+    content: s
+  - delay: 520
+    content: ' '
+  - delay: 579
+    content: (
+  - delay: 1022
+    content: 'n'
+  - delay: 246
+    content: o
+  - delay: 237
+    content: m
+  - delay: 150
+    content: e
+  - delay: 195
+    content: r
+  - delay: 1046
+    content: "\b \b"
+  - delay: 193
+    content: "\b \b"
+  - delay: 468
+    content: "\b \b"
+  - delay: 487
+    content: ' '
+  - delay: 3537
+    content: i
+  - delay: 220
+    content: 'n'
+  - delay: 141
+    content: t
+  - delay: 697
+    content: ' '
+  - delay: 2233
+    content: p
+  - delay: 150
+    content: r
+  - delay: 242
+    content: i
+  - delay: 253
+    content: m
+  - delay: 115
+    content: a
+  - delay: 271
+    content: r
+  - delay: 138
+    content: 'y'
+  - delay: 242
+    content: ' '
+  - delay: 296
+    content: k
+  - delay: 125
+    content: e
+  - delay: 192
+    content: 'y'
+  - delay: 1941
+    content: ' '
+  - delay: 313
+    content: a
+  - delay: 174
+    content: u
+  - delay: 219
+    content: t
+  - delay: 110
+    content: o
+  - delay: 260
+    content: ' '
+  - delay: 306
+    content: i
+  - delay: 182
+    content: 'n'
+  - delay: 126
+    content: c
+  - delay: 210
+    content: r
+  - delay: 164
+    content: e
+  - delay: 88
+    content: m
+  - delay: 70
+    content: e
+  - delay: 168
+    content: 'n'
+  - delay: 1163
+    content: "\b"
+  - delay: 150
+    content: "\b"
+  - delay: 210
+    content: "\b"
+  - delay: 122
+    content: "\b"
+  - delay: 604
+    content: "\b"
+  - delay: 153
+    content: "\b"
+  - delay: 167
+    content: "\b"
+  - delay: 181
+    content: "\b"
+  - delay: 757
+    content: "\e[?25l\e[16;19Hcreate database perpus; use perpus; create table yes (no int primary key autoincremen  \e[16;96H\e[?25h"
+  - delay: 1070
+    content: "\e[?25l\e[16;19Hcreate database perpus; use perpus; create table yes (no int primary key auto_incremen\e[16;97H\e[?25h"
+  - delay: 821
+    content: "\e[1C"
+  - delay: 498
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 155
+    content: "\e[1C"
+  - delay: 155
+    content: "\e[1C"
+  - delay: 1657
+    content: t
+  - delay: 79068
+    content: ','
+  - delay: 221
+    content: ' '
+  - delay: 643
+    content: 'n'
+  - delay: 133
+    content: a
+  - delay: 178
+    content: m
+  - delay: 78
+    content: a
+  - delay: 278
+    content: ' '
+  - delay: 846
+    content: V
+  - delay: 137
+    content: A
+  - delay: 155
+    content: R
+  - delay: 182
+    content: C
+  - delay: 95
+    content: G
+  - delay: 157
+    content: A
+  - delay: 144
+    content: R
+  - delay: 1056
+    content: "\b \e[16;119H"
+  - delay: 184
+    content: "\b \b"
+  - delay: 145
+    content: "\b \b"
+  - delay: 825
+    content: H
+  - delay: 121
+    content: A
+  - delay: 148
+    content: R
+  - delay: 9881
+    content: (
+  - delay: 321
+    content: '1'
+  - delay: 131
+    content: '0'
+  - delay: 436
+    content: '0'
+  - delay: 823
+    content: )
+  - delay: 47459
+    content: ','
+  - delay: 214
+    content: ' '
+  - delay: 4477
+    content: a
+  - delay: 221
+    content: l
+  - delay: 110
+    content: a
+  - delay: 104
+    content: m
+  - delay: 88
+    content: a
+  - delay: 269
+    content: t
+  - delay: 664
+    content: ' '
+  - delay: 761
+    content: V
+  - delay: 165
+    content: A
+  - delay: 153
+    content: R
+  - delay: 226
+    content: C
+  - delay: 1186
+    content: H
+  - delay: 124
+    content: A
+  - delay: 157
+    content: R
+  - delay: 831
+    content: '9'
+  - delay: 284
+    content: '1'
+  - delay: 185
+    content: '-'
+  - delay: 1131
+    content: "\b \b"
+  - delay: 179
+    content: "\b \b"
+  - delay: 501
+    content: "\b \b"
+  - delay: 1252
+    content: (
+  - delay: 402
+    content: '1'
+  - delay: 153
+    content: '-'
+  - delay: 849
+    content: "\b \b"
+  - delay: 368
+    content: '0'
+  - delay: 177
+    content: '0'
+  - delay: 556
+    content: )
+  - delay: 6139
+    content: ' '
+  - delay: 1383
+    content: )
+  - delay: 825
+    content: ;
+  - delay: 1518
+    content: "\b"
+  - delay: 413
+    content: "\b"
+  - delay: 692
+    content: "\e[?25l\e[16;19Hcreate database perpus; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100));  \e[17;26H\e[?25h"
+  - delay: 31408
+    content: "\e[1C"
+  - delay: 502
+    content: "\e[1C"
+  - delay: 6060
+    content: ' '
+  - delay: 710
+    content: I
+  - delay: 190
+    content: 'N'
+  - delay: 181
+    content: S
+  - delay: 196
+    content: E
+  - delay: 181
+    content: R
+  - delay: 182
+    content: T
+  - delay: 319
+    content: ' '
+  - delay: 1228
+    content: I
+  - delay: 255
+    content: 'N'
+  - delay: 147
+    content: T
+  - delay: 738
+    content: O
+  - delay: 351
+    content: ' '
+  - delay: 3037
+    content: 'y'
+  - delay: 145
+    content: e
+  - delay: 223
+    content: s
+  - delay: 2569
+    content: ' '
+  - delay: 730
+    content: )
+  - delay: 579
+    content: "\b \b"
+  - delay: 495
+    content: (
+  - delay: 355
+    content: 'n'
+  - delay: 104
+    content: a
+  - delay: 93
+    content: m
+  - delay: 76
+    content: a
+  - delay: 647
+    content: ','
+  - delay: 215
+    content: ' '
+  - delay: 2333
+    content: a
+  - delay: 311
+    content: l
+  - delay: 142
+    content: a
+  - delay: 71
+    content: m
+  - delay: 113
+    content: a
+  - delay: 376
+    content: t
+  - delay: 2711
+    content: )
+  - delay: 303
+    content: ' '
+  - delay: 547
+    content: V
+  - delay: 185
+    content: A
+  - delay: 225
+    content: L
+  - delay: 264
+    content: U
+  - delay: 319
+    content: S
+  - delay: 186
+    content: E
+  - delay: 925
+    content: "\b \b"
+  - delay: 145
+    content: "\b \b"
+  - delay: 458
+    content: E
+  - delay: 209
+    content: S
+  - delay: 710
+    content: )
+  - delay: 2600
+    content: "\b \b"
+  - delay: 403
+    content: ' '
+  - delay: 1187
+    content: '9'
+  - delay: 851
+    content: "\b \b"
+  - delay: 703
+    content: '9'
+  - delay: 930
+    content: "\b \b"
+  - delay: 941
+    content: (
+  - delay: 757
+    content: H
+  - delay: 108
+    content: A
+  - delay: 164
+    content: K
+  - delay: 245
+    content: I
+  - delay: 471
+    content: M
+  - delay: 531
+    content: "\b \b"
+  - delay: 147
+    content: "\b \b"
+  - delay: 119
+    content: "\b \b"
+  - delay: 343
+    content: "\b \b"
+  - delay: 179
+    content: "\b \b"
+  - delay: 880
+    content: a
+  - delay: 179
+    content: k
+  - delay: 145
+    content: i
+  - delay: 220
+    content: m
+  - delay: 526
+    content: "\b \b"
+  - delay: 161
+    content: "\b \b"
+  - delay: 137
+    content: "\b \b"
+  - delay: 269
+    content: "\b \b"
+  - delay: 559
+    content: h
+  - delay: 131
+    content: a
+  - delay: 126
+    content: k
+  - delay: 156
+    content: i
+  - delay: 210
+    content: m
+  - delay: 2306
+    content: "\b"
+  - delay: 164
+    content: "\b"
+  - delay: 142
+    content: "\b"
+  - delay: 83
+    content: "\b"
+  - delay: 142
+    content: "\b"
+  - delay: 1556
+    content: "\e[?25l\e[16;19Hcreate database perpus; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim\e[17;69H\e[?25h"
+  - delay: 706
+    content: "\e[1C"
+  - delay: 201
+    content: "\e[1C"
+  - delay: 122
+    content: "\e[1C"
+  - delay: 141
+    content: "\e[1C"
+  - delay: 363
+    content: "\e[1C"
+  - delay: 704
+    content: ''''
+  - delay: 492
+    content: ','
+  - delay: 232
+    content: ' '
+  - delay: 2484
+    content: ''''
+  - delay: 1581
+    content: p
+  - delay: 175
+    content: e
+  - delay: 179
+    content: r
+  - delay: 159
+    content: g
+  - delay: 287
+    content: i
+  - delay: 1622
+    content: ''''
+  - delay: 3059
+    content: )
+  - delay: 538
+    content: ''''
+  - delay: 903
+    content: "\b \b"
+  - delay: 378
+    content: ;
+  - delay: 156388
+    content: "\b \b"
+  - delay: 22731
+    content: ','
+  - delay: 215
+    content: ' '
+  - delay: 1130
+    content: "\b \b"
+  - delay: 764
+    content: (
+  - delay: 7896
+    content: ''''
+  - delay: 678
+    content: 'n'
+  - delay: 124
+    content: e
+  - delay: 155
+    content: g
+  - delay: 47
+    content: e
+  - delay: 183
+    content: r
+  - delay: 107
+    content: i
+  - delay: 350
+    content: ' '
+  - delay: 465
+    content: '5'
+  - delay: 1821
+    content: ''''
+  - delay: 1678
+    content: ','
+  - delay: 302
+    content: ' '
+  - delay: 15102
+    content: a
+  - delay: 710
+    content: "\b \b"
+  - delay: 497
+    content: g
+  - delay: 250
+    content: r
+  - delay: 268
+    content: a
+  - delay: 103
+    content: m
+  - delay: 210
+    content: e
+  - delay: 656
+    content: d
+  - delay: 174
+    content: i
+  - delay: 399
+    content: a
+  - delay: 782
+    content: "\b"
+  - delay: 159
+    content: "\b"
+  - delay: 315
+    content: "\b"
+  - delay: 205
+    content: "\b"
+  - delay: 121
+    content: "\b"
+  - delay: 108
+    content: "\b"
+  - delay: 143
+    content: "\b"
+  - delay: 100
+    content: "\b"
+  - delay: 1390
+    content: "\e[?25l\e[16;19Hcreate database perpus; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia\e[17;100H\e[?25h"
+  - delay: 697
+    content: "\e[1C"
+  - delay: 499
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 886
+    content: ''''
+  - delay: 3015
+    content: )
+  - delay: 6950
+    content: ;
+  - delay: 90837
+    content: "\b"
+  - delay: 500
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 27
+    content: "\b"
+  - delay: 32
+    content: "\r"
+  - delay: 34
+    content: "\e[?25l\e[16;120H\e[?25h"
+  - delay: 40
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 26
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 41
+    content: "\b"
+  - delay: 22
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 229
+    content: "\b"
+  - delay: 1038
+    content: "\e[1C"
+  - delay: 347
+    content: "\e[?25l\e[16;19Hcreate database perpu; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[16;40H\e[?25h"
+  - delay: 176
+    content: "\e[?25l\e[16;19Hcreate database perp; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[16;39H\e[?25h"
+  - delay: 112
+    content: "\e[?25l\e[16;19Hcreate database per; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[16;38H\e[?25h"
+  - delay: 106
+    content: "\e[?25l\e[16;19Hcreate database pe; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[16;37H\e[?25h"
+  - delay: 111
+    content: "\e[?25l\e[16;19Hcreate database p; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[16;36H\e[?25h"
+  - delay: 551
+    content: "\e[?25l\e[16;19Hcreate database ; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[16;35H\e[?25h"
+  - delay: 333
+    content: "\e[?25l\e[16;19Hcreate database t; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;36H\e[?25h"
+  - delay: 156
+    content: "\e[?25l\e[16;19Hcreate database to; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;37H\e[?25h"
+  - delay: 189
+    content: "\e[?25l\e[16;19Hcreate database tok; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;38H\e[?25h"
+  - delay: 147
+    content: "\e[?25l\e[16;19Hcreate database toko; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;39H\e[?25h"
+  - delay: 279
+    content: "\e[?25l\e[16;19Hcreate database toko ; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;40H\e[?25h"
+  - delay: 226
+    content: "\e[?25l\e[16;19Hcreate database toko b; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;41H\e[?25h"
+  - delay: 80
+    content: "\e[?25l\e[16;19Hcreate database toko ba; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;42H\e[?25h"
+  - delay: 125
+    content: "\e[?25l\e[16;19Hcreate database toko ban; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;43H\e[?25h"
+  - delay: 195
+    content: "\e[?25l\e[16;19Hcreate database toko bang; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;44H\e[?25h"
+  - delay: 151
+    content: "\e[?25l\e[16;19Hcreate database toko bangu; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;45H\e[?25h"
+  - delay: 133
+    content: "\e[?25l\e[16;19Hcreate database toko bangua; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;46H\e[?25h"
+  - delay: 680
+    content: "\e[?25l\e[16;19Hcreate database toko bangu; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[16;45H\e[?25h"
+  - delay: 167
+    content: "\e[?25l\e[16;19Hcreate database toko bang; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[16;44H\e[?25h"
+  - delay: 145
+    content: "\e[?25l\e[16;19Hcreate database toko ban; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[16;43H\e[?25h"
+  - delay: 225
+    content: "\e[?25l\e[16;19Hcreate database toko ba; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[16;42H\e[?25h"
+  - delay: 126
+    content: "\e[?25l\e[16;19Hcreate database toko b; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[16;41H\e[?25h"
+  - delay: 125
+    content: "\e[?25l\e[16;19Hcreate database toko ; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[16;40H\e[?25h"
+  - delay: 123
+    content: "\e[?25l\e[16;19Hcreate database toko; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[16;39H\e[?25h"
+  - delay: 115
+    content: "\e[?25l\e[16;19Hcreate database tok; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[16;38H\e[?25h"
+  - delay: 126
+    content: "\e[?25l\e[16;19Hcreate database to; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[16;37H\e[?25h"
+  - delay: 128
+    content: "\e[?25l\e[16;19Hcreate database t; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[16;36H\e[?25h"
+  - delay: 223
+    content: "\e[?25l\e[16;19Hcreate database ; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[16;35H\e[?25h"
+  - delay: 881
+    content: "\e[?25l\e[16;19Hcreate database t; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;36H\e[?25h"
+  - delay: 253
+    content: "\e[?25l\e[16;19Hcreate database to; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;37H\e[?25h"
+  - delay: 225
+    content: "\e[?25l\e[16;19Hcreate database tok; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;38H\e[?25h"
+  - delay: 163
+    content: "\e[?25l\e[16;19Hcreate database toko; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;39H\e[?25h"
+  - delay: 852
+    content: "\e[?25l\e[16;19Hcreate database toko ; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;40H\e[?25h"
+  - delay: 181
+    content: "\e[?25l\e[16;19Hcreate database toko b; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;41H\e[?25h"
+  - delay: 45
+    content: "\e[?25l\e[16;19Hcreate database toko ba; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;42H\e[?25h"
+  - delay: 148
+    content: "\e[?25l\e[16;19Hcreate database toko ban; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;43H\e[?25h"
+  - delay: 223
+    content: "\e[?25l\e[16;19Hcreate database toko bang; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;44H\e[?25h"
+  - delay: 165
+    content: "\e[?25l\e[16;19Hcreate database toko bangu; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;45H\e[?25h"
+  - delay: 780
+    content: "\e[?25l\e[16;19Hcreate database toko bangun; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;46H\e[?25h"
+  - delay: 165
+    content: "\e[?25l\e[16;19Hcreate database toko banguna; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;47H\e[?25h"
+  - delay: 120
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use perpus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;48H\e[?25h"
+  - delay: 1779
+    content: "\e[1C"
+  - delay: 499
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 158
+    content: "\e[1C"
+  - delay: 160
+    content: "\e[1C"
+  - delay: 146
+    content: "\e[1C"
+  - delay: 110
+    content: "\e[1C"
+  - delay: 144
+    content: "\e[1C"
+  - delay: 63
+    content: "\e[1C"
+  - delay: 198
+    content: "\e[1C"
+  - delay: 909
+    content: "\e[1C"
+  - delay: 1115
+    content: "\b"
+  - delay: 325
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use perps; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[16;58H\e[?25h"
+  - delay: 161
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use pers; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[16;57H\e[?25h"
+  - delay: 140
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use pes; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[16;56H\e[?25h"
+  - delay: 111
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use ps; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[16;55H\e[?25h"
+  - delay: 111
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use s; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[16;54H\e[?25h"
+  - delay: 693
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use ts; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;55H\e[?25h"
+  - delay: 188
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use tis; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;56H\e[?25h"
+  - delay: 1006
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use ts; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[16;55H\e[?25h"
+  - delay: 192
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use s; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[16;54H\e[?25h"
+  - delay: 714
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use ts; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;55H\e[?25h"
+  - delay: 220
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use tos; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;56H\e[?25h"
+  - delay: 181
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toks; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;57H\e[?25h"
+  - delay: 159
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use tokos; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;58H\e[?25h"
+  - delay: 307
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko s; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;59H\e[?25h"
+  - delay: 253
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bs; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;60H\e[?25h"
+  - delay: 78
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bas; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;61H\e[?25h"
+  - delay: 95
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bans; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;62H\e[?25h"
+  - delay: 233
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangs; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;63H\e[?25h"
+  - delay: 185
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangus; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;64H\e[?25h"
+  - delay: 228
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko banguns; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;65H\e[?25h"
+  - delay: 97
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunas; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;66H\e[?25h"
+  - delay: 136
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunans; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[16;67H\e[?25h"
+  - delay: 1959
+    content: "\e[1C"
+  - delay: 1167
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, nama VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[16;67H\e[?25h"
+  - delay: 1903
+    content: "\e[1C"
+  - delay: 216
+    content: "\e[1C"
+  - delay: 199
+    content: "\e[1C"
+  - delay: 332
+    content: "\e[1C"
+  - delay: 122
+    content: "\e[1C"
+  - delay: 115
+    content: "\e[1C"
+  - delay: 125
+    content: "\e[1C"
+  - delay: 111
+    content: "\e[1C"
+  - delay: 106
+    content: "\e[1C"
+  - delay: 121
+    content: "\e[1C"
+  - delay: 252
+    content: "\e[1C"
+  - delay: 368
+    content: "\e[1C"
+  - delay: 180
+    content: "\e[1C"
+  - delay: 465
+    content: "\e[1C"
+  - delay: 753
+    content: "\b"
+  - delay: 1888
+    content: "\e[1C"
+  - delay: 501
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 1195
+    content: "\e[1C"
+  - delay: 497
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 28
+    content: "\r\n"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 36
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 280
+    content: "\e[1C"
+  - delay: 184
+    content: "\e[1C"
+  - delay: 231
+    content: "\e[1C"
+  - delay: 107
+    content: "\e[1C"
+  - delay: 134
+    content: "\e[1C"
+  - delay: 283
+    content: "\e[1C"
+  - delay: 1198
+    content: "\e[1C"
+  - delay: 2849
+    content: "\b"
+  - delay: 174
+    content: "\b"
+  - delay: 133
+    content: "\b"
+  - delay: 130
+    content: "\b"
+  - delay: 1067
+    content: "\b"
+  - delay: 193
+    content: "\b"
+  - delay: 157
+    content: "\b"
+  - delay: 3007
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, nam VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;5H\e[?25h"
+  - delay: 179
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, na VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;4H\e[?25h"
+  - delay: 505
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, n VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;3H\e[?25h"
+  - delay: 447
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment,  VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;2H\e[?25h"
+  - delay: 707
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, s VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;3H\e[?25h"
+  - delay: 146
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, se VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;4H\e[?25h"
+  - delay: 121
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, sem VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;5H\e[?25h"
+  - delay: 54
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, seme VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;6H\e[?25h"
+  - delay: 244
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), alamat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;7H\e[?25h"
+  - delay: 999
+    content: "\e[1C"
+  - delay: 499
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 37
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 153
+    content: "\e[1C"
+  - delay: 150
+    content: "\e[1C"
+  - delay: 143
+    content: "\e[1C"
+  - delay: 120
+    content: "\e[1C"
+  - delay: 121
+    content: "\e[1C"
+  - delay: 110
+    content: "\e[1C"
+  - delay: 117
+    content: "\e[1C"
+  - delay: 122
+    content: "\e[1C"
+  - delay: 125
+    content: "\e[1C"
+  - delay: 143
+    content: "\e[1C"
+  - delay: 1863
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), alamt VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;26H\e[?25h"
+  - delay: 102
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), alat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;25H\e[?25h"
+  - delay: 167
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), alt VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;24H\e[?25h"
+  - delay: 495
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), at VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;23H\e[?25h"
+  - delay: 660
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), t VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;22H\e[?25h"
+  - delay: 2810
+    content: "\e[1C"
+  - delay: 663
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100),  VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;22H\e[?25h"
+  - delay: 666
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), b VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;23H\e[?25h"
+  - delay: 80
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), ba VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;24H\e[?25h"
+  - delay: 177
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), bat VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;25H\e[?25h"
+  - delay: 235
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (nama, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;26H\e[?25h"
+  - delay: 6259
+    content: "\e[1C"
+  - delay: 497
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 218
+    content: "\e[1C"
+  - delay: 157
+    content: "\e[1C"
+  - delay: 140
+    content: "\e[1C"
+  - delay: 307
+    content: "\e[1C"
+  - delay: 3284
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (naa, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;61H\e[?25h"
+  - delay: 351
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (na, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;60H\e[?25h"
+  - delay: 220
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (a, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;59H\e[?25h"
+  - delay: 831
+    content: "\e[1C"
+  - delay: 1045
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;59H\e[?25h"
+  - delay: 1910
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (s, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;60H\e[?25h"
+  - delay: 276
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (se, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;61H\e[?25h"
+  - delay: 199
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (sem, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;62H\e[?25h"
+  - delay: 60
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (seme, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;63H\e[?25h"
+  - delay: 183
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (semen, alamat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;64H\e[?25h"
+  - delay: 915
+    content: "\e[1C"
+  - delay: 495
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 158
+    content: "\e[1C"
+  - delay: 127
+    content: "\e[1C"
+  - delay: 118
+    content: "\e[1C"
+  - delay: 1406
+    content: "\e[1C"
+  - delay: 1081
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (semen, alama) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;71H\e[?25h"
+  - delay: 154
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (semen, alam) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;70H\e[?25h"
+  - delay: 101
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (semen, ala) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;69H\e[?25h"
+  - delay: 239
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (semen, al) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;68H\e[?25h"
+  - delay: 259
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (semen, a) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;67H\e[?25h"
+  - delay: 161
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (semen, ) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;66H\e[?25h"
+  - delay: 1326
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (semen, b) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;67H\e[?25h"
+  - delay: 110
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (semen, ba) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;68H\e[?25h"
+  - delay: 212
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (semen, bat) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;69H\e[?25h"
+  - delay: 1202
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (semen, ba) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;68H\e[?25h"
+  - delay: 177
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (semen, b) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;67H\e[?25h"
+  - delay: 164
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (semen, ) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;66H\e[?25h"
+  - delay: 683
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (semen, p) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;67H\e[?25h"
+  - delay: 97
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (semen, pa) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;68H\e[?25h"
+  - delay: 179
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (semen, pas) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;69H\e[?25h"
+  - delay: 271
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (semen, pasi) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;70H\e[?25h"
+  - delay: 170
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), batu VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;71H\e[?25h"
+  - delay: 655
+    content: "\b"
+  - delay: 499
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 167
+    content: "\b"
+  - delay: 402
+    content: "\e[1C"
+  - delay: 564
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), bat VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;25H\e[?25h"
+  - delay: 254
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), ba VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;24H\e[?25h"
+  - delay: 95
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), b VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;23H\e[?25h"
+  - delay: 327
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100),  VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');  \e[17;22H\e[?25h"
+  - delay: 588
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), p VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;23H\e[?25h"
+  - delay: 110
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pa VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;24H\e[?25h"
+  - delay: 170
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pas VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;25H\e[?25h"
+  - delay: 1120
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasi VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;26H\e[?25h"
+  - delay: 98
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('hakim', 'pergi'),('negeri 5', 'gramedia');\e[17;27H\e[?25h"
+  - delay: 716
+    content: "\e[1C"
+  - delay: 499
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 212
+    content: "\e[1C"
+  - delay: 83
+    content: "\e[1C"
+  - delay: 253
+    content: "\e[1C"
+  - delay: 148
+    content: "\e[1C"
+  - delay: 157
+    content: "\e[1C"
+  - delay: 236
+    content: "\e[1C"
+  - delay: 117
+    content: "\e[1C"
+  - delay: 124
+    content: "\e[1C"
+  - delay: 510
+    content: "\e[1C"
+  - delay: 234
+    content: "\e[1C"
+  - delay: 150
+    content: "\e[1C"
+  - delay: 84
+    content: "\e[1C"
+  - delay: 219
+    content: "\e[1C"
+  - delay: 496
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 163
+    content: "\e[1C"
+  - delay: 184
+    content: "\e[1C"
+  - delay: 147
+    content: "\e[1C"
+  - delay: 123
+    content: "\e[1C"
+  - delay: 100
+    content: "\e[1C"
+  - delay: 247
+    content: "\e[1C"
+  - delay: 263
+    content: "\e[1C"
+  - delay: 69
+    content: "\e[1C"
+  - delay: 260
+    content: "\e[1C"
+  - delay: 838
+    content: "\b"
+  - delay: 293
+    content: "\b"
+  - delay: 122
+    content: "\b"
+  - delay: 113
+    content: "\b"
+  - delay: 129
+    content: "\b"
+  - delay: 126
+    content: "\b"
+  - delay: 113
+    content: "\b"
+  - delay: 135
+    content: "\b"
+  - delay: 246
+    content: "\b"
+  - delay: 854
+    content: "\e[1C"
+  - delay: 2648
+    content: "\b"
+  - delay: 155
+    content: "\b"
+  - delay: 582
+    content: "\b"
+  - delay: 178
+    content: "\b"
+  - delay: 162
+    content: "\b"
+  - delay: 121
+    content: "\b"
+  - delay: 112
+    content: "\b"
+  - delay: 107
+    content: "\b"
+  - delay: 131
+    content: "\b"
+  - delay: 132
+    content: "\b"
+  - delay: 855
+    content: "\e[1C"
+  - delay: 545
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('haki', 'pergi'),('negeri 5', 'gramedia');  \e[17;87H\e[?25h"
+  - delay: 152
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('hak', 'pergi'),('negeri 5', 'gramedia');  \e[17;86H\e[?25h"
+  - delay: 227
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('ha', 'pergi'),('negeri 5', 'gramedia');  \e[17;85H\e[?25h"
+  - delay: 133
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('h', 'pergi'),('negeri 5', 'gramedia');  \e[17;84H\e[?25h"
+  - delay: 306
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('', 'pergi'),('negeri 5', 'gramedia');  \e[17;83H\e[?25h"
+  - delay: 365
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('s', 'pergi'),('negeri 5', 'gramedia');\e[17;84H\e[?25h"
+  - delay: 220
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('se', 'pergi'),('negeri 5', 'gramedia');\e[17;85H\e[?25h"
+  - delay: 135
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('sem', 'pergi'),('negeri 5', 'gramedia');\e[17;86H\e[?25h"
+  - delay: 43
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('seme', 'pergi'),('negeri 5', 'gramedia');\e[17;87H\e[?25h"
+  - delay: 154
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen', 'pergi'),('negeri 5', 'gramedia');\e[17;88H\e[?25h"
+  - delay: 1653
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen ', 'pergi'),('negeri 5', 'gramedia');\e[17;89H\e[?25h"
+  - delay: 186
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3', 'pergi'),('negeri 5', 'gramedia');\e[17;90H\e[?25h"
+  - delay: 383
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 ', 'pergi'),('negeri 5', 'gramedia');\e[17;91H\e[?25h"
+  - delay: 482
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 r', 'pergi'),('negeri 5', 'gramedia');\e[17;92H\e[?25h"
+  - delay: 229
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 ro', 'pergi'),('negeri 5', 'gramedia');\e[17;93H\e[?25h"
+  - delay: 132
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 rod', 'pergi'),('negeri 5', 'gramedia');\e[17;94H\e[?25h"
+  - delay: 887
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 rodA', 'pergi'),('negeri 5', 'gramedia');\e[17;95H\e[?25h"
+  - delay: 921
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 rod', 'pergi'),('negeri 5', 'gramedia');  \e[17;94H\e[?25h"
+  - delay: 1521
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('negeri 5', 'gramedia');\e[17;95H\e[?25h"
+  - delay: 238
+    content: "\e[1C"
+  - delay: 205
+    content: "\e[1C"
+  - delay: 500
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 37
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 209
+    content: "\e[1C"
+  - delay: 135
+    content: "\e[1C"
+  - delay: 146
+    content: "\e[1C"
+  - delay: 208
+    content: "\e[1C"
+  - delay: 126
+    content: "\e[1C"
+  - delay: 999
+    content: "\e[1C"
+  - delay: 604
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('negeri ', 'gramedia');  \e[17;116H\e[?25h"
+  - delay: 249
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('negeri', 'gramedia');  \e[17;115H\e[?25h"
+  - delay: 123
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('neger', 'gramedia');  \e[17;114H\e[?25h"
+  - delay: 111
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('nege', 'gramedia');  \e[17;113H\e[?25h"
+  - delay: 115
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('neg', 'gramedia');  \e[17;112H\e[?25h"
+  - delay: 116
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('ne', 'gramedia');  \e[17;111H\e[?25h"
+  - delay: 110
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('n', 'gramedia');  \e[17;110H\e[?25h"
+  - delay: 523
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('', 'gramedia');  \e[17;109H\e[?25h"
+  - delay: 614
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('p', 'gramedia');\e[17;110H\e[?25h"
+  - delay: 112
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pa', 'gramedia');\e[17;111H\e[?25h"
+  - delay: 170
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pas', 'gramedia');\e[17;112H\e[?25h"
+  - delay: 135
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasi', 'gramedia');\e[17;113H\e[?25h"
+  - delay: 284
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir', 'gramedia');\e[17;114H\e[?25h"
+  - delay: 237
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir ', 'gramedia');\e[17;115H\e[?25h"
+  - delay: 506
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir j', 'gramedia');\e[17;116H\e[?25h"
+  - delay: 99
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir ja', 'gramedia');\e[17;117H\e[?25h"
+  - delay: 207
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaa', 'gramedia');\e[17;118H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[16;19Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');\e[17;119H\e[?25h"
+  - delay: 1248
+    content: "\e[1C"
+  - delay: 497
+    content: "\r\n"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 346
+    content: "\e[1C"
+  - delay: 164
+    content: "\e[1C"
+  - delay: 500
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 535
+    content: "\r\n"
+  - delay: 25
+    content: ERROR 1064 (42000)
+  - delay: 9
+    content: ": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'bangunan' at line 1\r\n"
+  - delay: 17
+    content: "ERROR 1049 (42000): Unknown database 'toko'\r\nERROR 1046 (3D000): No database selected\r\nERROR 1046 (3D000): No database selected\r\nMariaDB [(none)]> "
+  - delay: 8014
+    content: >-
+      create database toko bangunan; use toko bangunan; create table yes (no int
+      primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100));
+      INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir
+      jaay', 'gramedia');
+  - delay: 2206
+    content: "\b"
+  - delay: 267
+    content: "\b"
+  - delay: 240
+    content: "\b"
+  - delay: 158
+    content: "\b"
+  - delay: 142
+    content: "\b"
+  - delay: 143
+    content: "\b"
+  - delay: 2144
+    content: "\b"
+  - delay: 499
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\r"
+  - delay: 33
+    content: "\e[?25l\e[25;120H\e[?25h"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 519
+    content: "\b"
+  - delay: 310
+    content: "\b"
+  - delay: 199
+    content: "\b"
+  - delay: 160
+    content: "\b"
+  - delay: 495
+    content: "\b"
+  - delay: 34
+    content: "\r"
+  - delay: 35
+    content: "\e[?25l\e[24;120H\e[?25h"
+  - delay: 36
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 1892
+    content: "\e[1C"
+  - delay: 498
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 130
+    content: "\e[1C"
+  - delay: 9
+    content: "\e[?25l\e[25;2H\e[?25h"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 24
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 1793
+    content: "\e[1C"
+  - delay: 496
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 36
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 43
+    content: "\e[1C"
+  - delay: 23
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 27
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 188
+    content: "\e[1C"
+  - delay: 149
+    content: "\e[1C"
+  - delay: 499
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\r\n"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 246
+    content: "\e[1C"
+  - delay: 167
+    content: "\e[1C"
+  - delay: 113
+    content: "\e[1C"
+  - delay: 126
+    content: "\e[1C"
+  - delay: 100
+    content: "\e[1C"
+  - delay: 119
+    content: "\e[1C"
+  - delay: 118
+    content: "\e[1C"
+  - delay: 109
+    content: "\e[1C"
+  - delay: 220
+    content: "\e[1C"
+  - delay: 137
+    content: "\e[1C"
+  - delay: 118
+    content: "\e[1C"
+  - delay: 118
+    content: "\e[1C"
+  - delay: 625
+    content: "\b \b"
+  - delay: 501
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 36
+    content: "\b \b"
+  - delay: 32
+    content: "\r \r"
+  - delay: 35
+    content: "\e[?25l\e[25;120H \e[?25h"
+  - delay: 31
+    content: "\e[25;119H \e[25;119H"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 37
+    content: "\b \b"
+  - delay: 27
+    content: "\b \b"
+  - delay: 35
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 36
+    content: "\b \b"
+  - delay: 30
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 35
+    content: "\b \b"
+  - delay: 36
+    content: "\b \b"
+  - delay: 29
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 37
+    content: "\b \b"
+  - delay: 37
+    content: "\b \b"
+  - delay: 26
+    content: "\b \b"
+  - delay: 36
+    content: "\b \b"
+  - delay: 30
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 38
+    content: "\b \b"
+  - delay: 28
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 39
+    content: "\b \b"
+  - delay: 28
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 39
+    content: "\b \b"
+  - delay: 27
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 35
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 40
+    content: "\b \b"
+  - delay: 26
+    content: "\b \b"
+  - delay: 37
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 35
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 41
+    content: "\b \b"
+  - delay: 24
+    content: "\b \b"
+  - delay: 38
+    content: "\b \b"
+  - delay: 30
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 35
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 37
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 37
+    content: "\b \b"
+  - delay: 26
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 38
+    content: "\b \b"
+  - delay: 27
+    content: "\b \b"
+  - delay: 36
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\r \r"
+  - delay: 33
+    content: "\e[?25l\e[24;120H \e[?25h"
+  - delay: 33
+    content: "\e[24;119H \e[24;119H"
+  - delay: 35
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 38
+    content: "\b \b"
+  - delay: 28
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 39
+    content: "\b \b"
+  - delay: 27
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 36
+    content: "\b \b"
+  - delay: 29
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 35
+    content: "\b \b"
+  - delay: 28
+    content: "\b \b"
+  - delay: 35
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 176
+    content: "\b \b"
+  - delay: 159
+    content: "\b \b"
+  - delay: 78
+    content: "\b \b"
+  - delay: 126
+    content: "\b \b"
+  - delay: 230
+    content: "\b \b"
+  - delay: 118
+    content: "\b \b"
+  - delay: 109
+    content: "\b \b"
+  - delay: 109
+    content: "\b \b"
+  - delay: 116
+    content: "\b \b"
+  - delay: 112
+    content: "\b \b"
+  - delay: 357
+    content: "\b \b"
+  - delay: 446
+    content: "\r\n"
+  - delay: 15
+    content: "ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'bangunan' at line 1\r\nERROR 1049 (42000): Unknown database 'toko'\r\nMariaDB [(none)]> "
+  - delay: 23884
+    content: u
+  - delay: 100
+    content: s
+  - delay: 225
+    content: e
+  - delay: 781
+    content: "\b \b"
+  - delay: 182
+    content: "\b \b"
+  - delay: 318
+    content: "\b \b"
+  - delay: 1854
+    content: c
+  - delay: 287
+    content: r
+  - delay: 185
+    content: e
+  - delay: 165
+    content: t
+  - delay: 194
+    content: a
+  - delay: 732
+    content: "\b \b"
+  - delay: 659
+    content: "\b \b"
+  - delay: 187
+    content: a
+  - delay: 339
+    content: t
+  - delay: 117
+    content: e
+  - delay: 174
+    content: ' '
+  - delay: 145
+    content: d
+  - delay: 191
+    content: a
+  - delay: 104
+    content: t
+  - delay: 90
+    content: a
+  - delay: 178
+    content: b
+  - delay: 490
+    content: a
+  - delay: 172
+    content: s
+  - delay: 215
+    content: e
+  - delay: 2054
+    content: ' '
+  - delay: 311
+    content: b
+  - delay: 118
+    content: a
+  - delay: 66
+    content: 'n'
+  - delay: 229
+    content: g
+  - delay: 158
+    content: u
+  - delay: 247
+    content: 'n'
+  - delay: 123
+    content: a
+  - delay: 109
+    content: 'n'
+  - delay: 1024
+    content: ;
+  - delay: 273
+    content: "\r\nQuery OK, 1 row affected (0.003 sec)\r\n"
+  - delay: 6
+    content: "\nMariaDB [(none)]>\e[1C"
+  - delay: 1979
+    content: u
+  - delay: 63
+    content: s
+  - delay: 178
+    content: e
+  - delay: 91
+    content: ' '
+  - delay: 299
+    content: b
+  - delay: 85
+    content: a
+  - delay: 105
+    content: 'n'
+  - delay: 196
+    content: g
+  - delay: 513
+    content: "\b \b"
+  - delay: 234
+    content: "\b \b"
+  - delay: 212
+    content: "\b \b"
+  - delay: 317
+    content: "\b \b"
+  - delay: 316
+    content: t
+  - delay: 150
+    content: o
+  - delay: 177
+    content: k
+  - delay: 154
+    content: o
+  - delay: 239
+    content: ' '
+  - delay: 216
+    content: b
+  - delay: 72
+    content: a
+  - delay: 112
+    content: 'n'
+  - delay: 198
+    content: g
+  - delay: 158
+    content: u
+  - delay: 119
+    content: a
+  - delay: 200
+    content: 'n'
+  - delay: 825
+    content: "\b \b"
+  - delay: 128
+    content: "\b \b"
+  - delay: 712
+    content: 'n'
+  - delay: 46
+    content: a
+  - delay: 123
+    content: 'n'
+  - delay: 481
+    content: ;
+  - delay: 414
+    content: "\r\nERROR 1049 (42000): Unknown database 'toko'"
+  - delay: 10
+    content: "\r\nMariaDB [(none)]>\e[1C"
+  - delay: 4521
+    content: u
+  - delay: 96
+    content: s
+  - delay: 175
+    content: e
+  - delay: 154
+    content: ' '
+  - delay: 297
+    content: b
+  - delay: 87
+    content: a
+  - delay: 102
+    content: 'n'
+  - delay: 187
+    content: g
+  - delay: 165
+    content: u
+  - delay: 202
+    content: 'n'
+  - delay: 80
+    content: a
+  - delay: 119
+    content: 'n'
+  - delay: 710
+    content: ;
+  - delay: 211
+    content: "\r\nDatabase changed"
+  - delay: 17
+    content: "\r\nMariaDB [bangunan]>\e[1C"
+  - delay: 2048
+    content: use bangunan;
+  - delay: 686
+    content: "\e[?25l\e[30;21Huse toko bangunan;\e[?25h"
+  - delay: 343
+    content: "\e[?25l\e[30;21Hcreate database bangunan;\e[?25h"
+  - delay: 311
+    content: "\e[?25l\e[30;21Hcreate database toko bangunan; use toko bangunan; \e[?25h"
+  - delay: 3353
+    content: "\e[?25l\e[30;21Hcreate database toko bangunan; use toko bangunan; create table yes (no int primary key auto_incremen\e[?25h\r\n\e[29;120Hnt, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay\r\n\e[29;120Hy', 'gramedia');"
+  - delay: 1952
+    content: "\b"
+  - delay: 495
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 35
+    content: "\r"
+  - delay: 33
+    content: "\e[?25l\e[29;120H\e[?25h"
+  - delay: 31
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\r"
+  - delay: 33
+    content: "\e[?25l\e[28;120H\e[?25h"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 182
+    content: "\b"
+  - delay: 656
+    content: "\e[?25l\e[28;21Hcreate database toko bangunan; use toko bangunan create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;69H\e[?25h"
+  - delay: 500
+    content: "\e[?25l\e[28;21Hcreate database toko bangunan; use toko banguna create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;68H\e[?25h"
+  - delay: 34
+    content: "\e[?25l\e[28;21Hcreate database toko bangunan; use toko bangun create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;67H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[28;21Hcreate database toko bangunan; use toko bangu create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;66H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\e[28;21Hcreate database toko bangunan; use toko bang create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;65H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\e[28;21Hcreate database toko bangunan; use toko ban create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;64H\e[?25h"
+  - delay: 37
+    content: "\e[?25l\e[28;21Hcreate database toko bangunan; use toko ba create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;63H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[28;21Hcreate database toko bangunan; use toko b create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;62H\e[?25h"
+  - delay: 39
+    content: "\e[?25l\e[28;21Hcreate database toko bangunan; use toko  create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;61H\e[?25h"
+  - delay: 26
+    content: "\e[?25l\e[28;21Hcreate database toko bangunan; use toko create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;60H\e[?25h"
+  - delay: 36
+    content: "\e[?25l\e[28;21Hcreate database toko bangunan; use tok create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;59H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\e[28;21Hcreate database toko bangunan; use to create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;58H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[28;21Hcreate database toko bangunan; use t create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;57H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[28;21Hcreate database toko bangunan; use  create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;56H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[28;21Hcreate database toko bangunan; use create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;55H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[28;21Hcreate database toko bangunan; us create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;54H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[28;21Hcreate database toko bangunan; u create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;53H\e[?25h"
+  - delay: 40
+    content: "\e[?25l\e[28;21Hcreate database toko bangunan;  create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;52H\e[?25h"
+  - delay: 26
+    content: "\e[?25l\e[28;21Hcreate database toko bangunan; create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;51H\e[?25h"
+  - delay: 36
+    content: "\e[?25l\e[28;21Hcreate database toko bangunan create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;50H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\e[28;21Hcreate database toko banguna create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;49H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\e[28;21Hcreate database toko bangun create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;48H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\e[28;21Hcreate database toko bangu create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;47H\e[?25h"
+  - delay: 35
+    content: "\e[?25l\e[28;21Hcreate database toko bang create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;46H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[28;21Hcreate database toko ban create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;45H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[28;21Hcreate database toko ba create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;44H\e[?25h"
+  - delay: 38
+    content: "\e[?25l\e[28;21Hcreate database toko b create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;43H\e[?25h"
+  - delay: 26
+    content: "\e[?25l\e[28;21Hcreate database toko  create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;42H\e[?25h"
+  - delay: 36
+    content: "\e[?25l\e[28;21Hcreate database toko create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;41H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[28;21Hcreate database tok create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;40H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[28;21Hcreate database to create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;39H\e[?25h"
+  - delay: 34
+    content: "\e[?25l\e[28;21Hcreate database t create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;38H\e[?25h"
+  - delay: 39
+    content: "\e[?25l\e[28;21Hcreate database  create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;37H\e[?25h"
+  - delay: 25
+    content: "\e[?25l\e[28;21Hcreate database create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;36H\e[?25h"
+  - delay: 36
+    content: "\e[?25l\e[28;21Hcreate databas create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;35H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\e[28;21Hcreate databa create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;34H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[28;21Hcreate datab create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;33H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[28;21Hcreate data create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;32H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[28;21Hcreate dat create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;31H\e[?25h"
+  - delay: 188
+    content: "\e[?25l\e[28;21Hcreate da create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;30H\e[?25h"
+  - delay: 154
+    content: "\e[?25l\e[28;21Hcreate d create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;29H\e[?25h"
+  - delay: 129
+    content: "\e[?25l\e[28;21Hcreate  create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;28H\e[?25h"
+  - delay: 103
+    content: "\e[?25l\e[28;21Hcreate create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;27H\e[?25h"
+  - delay: 120
+    content: "\e[?25l\e[28;21Hcreat create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;26H\e[?25h"
+  - delay: 118
+    content: "\e[?25l\e[28;21Hcrea create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;25H\e[?25h"
+  - delay: 114
+    content: "\e[?25l\e[28;21Hcre create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;24H\e[?25h"
+  - delay: 121
+    content: "\e[?25l\e[28;21Hcr create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;23H\e[?25h"
+  - delay: 270
+    content: "\e[?25l\e[28;21Hc create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;22H\e[?25h"
+  - delay: 149
+    content: "\e[?25l\b create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;21H\e[?25h"
+  - delay: 1950
+    content: "\e[1C"
+  - delay: 389
+    content: "\e[?25l\bcreate table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');  \e[28;21H\e[?25h"
+  - delay: 791
+    content: "create table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia'); \r\n"
+  - delay: 103
+    content: "Query OK, 0 rows affected (0.102 sec)\r\n"
+  - delay: 21
+    content: |+
+
+  - delay: 47
+    content: "Query OK, 2 rows affected (0.067 sec)\r\nRecords: 2  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 12
+    content: "\nMariaDB [bangunan]>\e[1C"
+  - delay: 5072
+    content: s
+  - delay: 187
+    content: e
+  - delay: 153
+    content: l
+  - delay: 53
+    content: e
+  - delay: 1130
+    content: c
+  - delay: 122
+    content: t
+  - delay: 785
+    content: ' '
+  - delay: 525
+    content: +
+  - delay: 353
+    content: ' '
+  - delay: 1260
+    content: "\b \b"
+  - delay: 161
+    content: "\b \b"
+  - delay: 1303
+    content: '*'
+  - delay: 360
+    content: ' '
+  - delay: 373
+    content: f
+  - delay: 280
+    content: r
+  - delay: 135
+    content: o
+  - delay: 1186
+    content: m
+  - delay: 340
+    content: ' '
+  - delay: 471
+    content: b
+  - delay: 100
+    content: a
+  - delay: 115
+    content: 'n'
+  - delay: 222
+    content: g
+  - delay: 187
+    content: u
+  - delay: 925
+    content: 'n'
+  - delay: 81
+    content: a
+  - delay: 90
+    content: 'n'
+  - delay: 8580
+    content: ;
+  - delay: 830
+    content: "\r\nERROR 1146 (42S02): Table 'bangunan.bangunan' doesn't exist"
+  - delay: 13
+    content: "\r\nMariaDB [bangunan]>\e[1C"
+  - delay: 3274
+    content: s
+  - delay: 197
+    content: e
+  - delay: 138
+    content: l
+  - delay: 126
+    content: e
+  - delay: 635
+    content: c
+  - delay: 530
+    content: t
+  - delay: 347
+    content: ' '
+  - delay: 610
+    content: '*'
+  - delay: 300
+    content: ' '
+  - delay: 10252
+    content: f
+  - delay: 168
+    content: r
+  - delay: 111
+    content: o
+  - delay: 280
+    content: m
+  - delay: 491
+    content: ' '
+  - delay: 36363
+    content: "\b \b"
+  - delay: 142
+    content: "\b \b"
+  - delay: 116
+    content: "\b \b"
+  - delay: 116
+    content: "\b \b"
+  - delay: 118
+    content: "\b \b"
+  - delay: 114
+    content: "\b \b"
+  - delay: 131
+    content: "\b \b"
+  - delay: 122
+    content: "\b \b"
+  - delay: 117
+    content: "\b \b"
+  - delay: 127
+    content: "\b \b"
+  - delay: 124
+    content: "\b \b"
+  - delay: 120
+    content: "\b \b"
+  - delay: 125
+    content: "\b \b"
+  - delay: 351
+    content: "\b \b"
+  - delay: 610529
+    content: s
+  - delay: 202
+    content: e
+  - delay: 187
+    content: l
+  - delay: 78
+    content: e
+  - delay: 662
+    content: c
+  - delay: 195
+    content: t
+  - delay: 592
+    content: "\b \b"
+  - delay: 162
+    content: "\b \b"
+  - delay: 211
+    content: "\b \b"
+  - delay: 107
+    content: "\b \b"
+  - delay: 93
+    content: "\b \b"
+  - delay: 105
+    content: "\b \b"
+  - delay: 1805
+    content: E
+  - delay: 291
+    content: L
+  - delay: 593
+    content: "\b \b"
+  - delay: 118
+    content: "\b \b"
+  - delay: 420
+    content: S
+  - delay: 240
+    content: E
+  - delay: 280
+    content: ;
+  - delay: 956
+    content: "\b \b"
+  - delay: 655
+    content: L
+  - delay: 119
+    content: E
+  - delay: 527
+    content: T
+  - delay: 64
+    content: C
+  - delay: 807
+    content: "\b \b"
+  - delay: 150
+    content: "\b \b"
+  - delay: 649
+    content: T
+  - delay: 741
+    content: "\b \b"
+  - delay: 249
+    content: C
+  - delay: 164
+    content: T
+  - delay: 528
+    content: ' '
+  - delay: 1332
+    content: '*'
+  - delay: 275
+    content: ' '
+  - delay: 217
+    content: F
+  - delay: 202
+    content: R
+  - delay: 111
+    content: O
+  - delay: 337
+    content: M
+  - delay: 265
+    content: ' '
+  - delay: 715
+    content: 'y'
+  - delay: 162
+    content: e
+  - delay: 244
+    content: s
+  - delay: 356
+    content: "\r\n"
+  - delay: 15
+    content: '    -> '
+  - delay: 3202
+    content: )
+  - delay: 1039
+    content: ;
+  - delay: 770
+    content: "\r\nERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server versi\r\n\e[29;120Hion for the right syntax to use near ')' at line 2"
+  - delay: 16
+    content: "\r\nMariaDB [bangunan]>\e[1C"
+  - delay: 6773
+    content: );
+  - delay: 916
+    content: "\e[?25l\e[30;21HSELECT * FROM yes\e[?25h"
+  - delay: 1345
+    content: ;
+  - delay: 215
+    content: "\r\n"
+  - delay: 29
+    content: "+----+--------------+----------+\r\n| no | semen        | pasir    |\r\n+----+--------------+----------+\r\n|  1 | semen 3 roda | pergi    |\r\n|  2 | pasir jaay   | gramedia |\r\n+----+--------------+----------+\r\n2 rows in set (0.029 sec)\r\n"
+  - delay: 10
+    content: "\nMariaDB [bangunan]>\e[1C"
+  - delay: 20202
+    content: SELECT * FROM yes;
+  - delay: 353
+    content: "\e[?25l\e[30;21H);\e[17X\e[?25h"
+  - delay: 322
+    content: "\e[?25l\e[30;21HSELECT * FROM yes\e[?25h"
+  - delay: 330
+    content: "\e[?25l\e[30;21Hselect * from bangunan;\e[?25h"
+  - delay: 370
+    content: "\e[?25l\e[30;21Hcreate table yes (no int primary key auto_increment, semen VARCHAR(100), pasir VARCHAR(100)); INSERT\e[?25h\r\n\e[29;120HT INTO yes (semen, pasir) VALUES ('semen 3 roda', 'pergi'),('pasir jaay', 'gramedia');"
+  - delay: 2006
+    content: "\b \b"
+  - delay: 1841
+    content: ','
+  - delay: 218
+    content: ' '
+  - delay: 1179
+    content: )
+  - delay: 753
+    content: "\b \b"
+  - delay: 466
+    content: (
+  - delay: 3239
+    content: ''''
+  - delay: 1237
+    content: b
+  - delay: 87
+    content: a
+  - delay: 225
+    content: t
+  - delay: 225
+    content: u
+  - delay: 2281
+    content: ''''
+  - delay: 706
+    content: ','
+  - delay: 213
+    content: ' '
+  - delay: 7469
+    content: ''''
+  - delay: 4161
+    content: k
+  - delay: 85
+    content: a
+  - delay: 247
+    content: 'y'
+  - delay: 178
+    content: u
+  - delay: 2081
+    content: ''''
+  - delay: 1337
+    content: )
+  - delay: 2428
+    content: ','
+  - delay: 229
+    content: ' '
+  - delay: 1514
+    content: (
+  - delay: 1274
+    content: ''''
+  - delay: 5615
+    content: b
+  - delay: 117
+    content: e
+  - delay: 194
+    content: s
+  - delay: 97
+    content: i
+  - delay: 1370
+    content: ''''
+  - delay: 971
+    content: ','
+  - delay: 1425
+    content: ' '
+  - delay: 1847
+    content: ''''
+  - delay: 4616
+    content: p
+  - delay: 57
+    content: a
+  - delay: 138
+    content: p
+  - delay: 52
+    content: a
+  - delay: 1461
+    content: "\b \b"
+  - delay: 161
+    content: "\b \b"
+  - delay: 135
+    content: "\b \b"
+  - delay: 382
+    content: "\b \b"
+  - delay: 4171
+    content: c
+  - delay: 97
+    content: a
+  - delay: 132
+    content: t
+  - delay: 1218
+    content: "\b \b"
+  - delay: 174
+    content: "\b \b"
+  - delay: 878
+    content: e
+  - delay: 237
+    content: t
+  - delay: 834
+    content: "\b \b"
+  - delay: 160
+    content: "\b \b"
+  - delay: 346
+    content: a
+  - delay: 233
+    content: t
+  - delay: 1079
+    content: ''''
+  - delay: 1857
+    content: )
+  - delay: 1039
+    content: ";\r\n\e[29;120H;\r\n"
+  - delay: 683
+    content: |-
+
+      ERROR 1050 (42S01): Table 'yes' already exists
+  - delay: 6
+    content: "\r\nQuery OK, 4 rows affected (0.005 sec)\r\nRecords: 4  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 7
+    content: "\nMariaDB [bangunan]>\e[1C"
+  - delay: 2763
+    content: s
+  - delay: 188
+    content: e
+  - delay: 156
+    content: l
+  - delay: 62
+    content: e
+  - delay: 641
+    content: "\b \b"
+  - delay: 146
+    content: "\b \b"
+  - delay: 211
+    content: "\b \b"
+  - delay: 263
+    content: "\b \b"
+  - delay: 1039
+    content: S
+  - delay: 171
+    content: E
+  - delay: 333
+    content: L
+  - delay: 1498
+    content: E
+  - delay: 778
+    content: C
+  - delay: 136
+    content: T
+  - delay: 552
+    content: ' '
+  - delay: 644
+    content: '*'
+  - delay: 298
+    content: ' '
+  - delay: 313
+    content: F
+  - delay: 180
+    content: R
+  - delay: 104
+    content: O
+  - delay: 824
+    content: M
+  - delay: 291
+    content: ' '
+  - delay: 1553
+    content: t
+  - delay: 743
+    content: "\b \b"
+  - delay: 395
+    content: 'y'
+  - delay: 85
+    content: e
+  - delay: 198
+    content: s
+  - delay: 304
+    content: ;
+  - delay: 483
+    content: "\r\n+----+--------------+----------+\r\n| no | semen        | pasir    |\r\n+----+--------------+----------+\r\n|  1 | semen 3 roda | pergi    |\r\n|  2 | pasir jaay   | gramedia |\r\n|  3 | semen 3 roda | pergi    |\r\n|  4 | pasir jaay   | gramedia |\r\n|  5 | batu         | kayu     |\r\n|  6 | besi         | cat      |\r\n+----+--------------+----------+\r\n6 rows in set (0.000 sec)\r\n\nMariaDB [bangunan]>\e[1C"
+  - delay: 123477
+    content: ^D
+  - delay: 1154
+    content: "\r\n"
+  - delay: 11
+    content: '    -> '
+  - delay: 2580
+    content: )
+  - delay: 1467
+    content: ;
+  - delay: 420
+    content: "\r\nERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server versi\r\n\e[29;120Hion for the right syntax to use near '\\0004\r\n)' at line 1"
+  - delay: 13
+    content: "\r\nMariaDB [bangunan]>\e[1C"
+  - delay: 1108
+    content: e
+  - delay: 378
+    content: x
+  - delay: 236
+    content: i
+  - delay: 322
+    content: t
+  - delay: 790
+    content: "\r\nBye"
+  - delay: 18
+    content: "\r\n"
+  - delay: 90
+    content: 'PS C:\Users\USER> '
+  - delay: 8773
+    content: "\e[?25l"
+  - delay: 24
+    content: "\e[93m^D\e[?25h"
+  - delay: 692
+    content: "\e[m"
+  - delay: 20
+    content: "\r\n"
+  - delay: 517
+    content: "\e[38;5;9m♦ : The term '♦' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the "
+  - delay: 37
+    content: "\e[m\r\n\e[38;5;9mspelling of the name, or if a path was included, verify that the path is correct and try again.\e[m\r\n\e[38;5;9mAt line:1 char:1\e[m\r\n\e[38;5;9m+ ♦\e[m\r\n\e[38;5;9m+ ~\e[m\r\n\e[38;5;9m    + CategoryInfo          : ObjectNotFound: (♦:String) [], CommandNotFoundException\e[m\r\n\e[38;5;9m    + FullyQualifiedErrorId : CommandNotFoundException\e[m\r\n\e[38;5;9m\e[1C\e[m\r\n"
+  - delay: 39
+    content: 'PS C:\Users\USER> '
+  - delay: 3592
+    content: "\e[?25l"
+  - delay: 10
+    content: "\e[93me\e[?25h"
+  - delay: 313
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\bex\e[?25h"
+  - delay: 201
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[30;19Hexi\e[?25h"
+  - delay: 910
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[92m\e[30;19Hexit\e[?25h"
+  - delay: 420
+    content: "\e[m"
+  - delay: 15
+    content: "\r\n"
